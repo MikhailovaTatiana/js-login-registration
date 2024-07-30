@@ -86,11 +86,11 @@ button {
     cursor: pointer;
 }
 
-#register-form {
-    /* display: none; */
+.register-form {
+    display: flex;
 }
 
-#login-form {
+.login-form {
     display: none;
 }
 

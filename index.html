@@ -9,13 +9,13 @@
 <body>
     <header>
         <nav>
-            <a href="#login-form">Login</a>
-            <a href="#register-form">Registration</a>
+            <a href="#" id="login-page">Login</a>
+            <a href="#" id="register-page">Registration</a>
         </nav>
     </header>
     
     <main>
-        <form id="register-form">
+        <form class="register-form">
             <h2>Registration</h2>
             <br> 
             <fieldset>
@@ -35,12 +35,12 @@
             <br>
             <fieldset>
                 <legend>Password</legend>
-                <input type="password" id="password1" placeholder="password" required>
+                <input type="password" id="password1" placeholder="password" autocomplete="off" required>
             </fieldset>
             <br>
             <fieldset>
                 <legend>Confirm password</legend>
-                <input type="password" id="password2" placeholder="confirm password" required>
+                <input type="password" id="password2" placeholder="confirm password" autocomplete="off" required>
             </fieldset>
             <br>
             <h5 id="registrationMessage"></h5>
@@ -48,7 +48,7 @@
             <button type="submit">Sign up</button>
         </form>
     
-        <form id="login-form">
+        <form class="login-form">
             <h2>Login</h2>
             <br>
             <fieldset>
@@ -58,7 +58,7 @@
             <br>
             <fieldset>
                 <legend>Password</legend>
-                <input type="password" id="password" placeholder="password" required>
+                <input type="password" id="password" placeholder="password" autocomplete="off" required>
             </fieldset>
             <br>
             <h5 id="loginMessage"></h5>
