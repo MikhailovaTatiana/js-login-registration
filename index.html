@@ -3,10 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Registration</title>
+    <title>Account Forms</title>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#login-form">Login</a>
+            <a href="#register-form">Registration</a>
+        </nav>
+    </header>
+    
+    <main>
+        <form id="register-form">
+            <h2>Registration</h2>
+            <br> 
+            <fieldset>
+                <legend>Full name</legend>
+                <input type="text" id="fullName" placeholder="full name" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Username</legend>
+                <input type="text" id="username" placeholder="username" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" id="email" placeholder="email" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Password</legend>
+                <input type="password" id="password1" placeholder="password" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Confirm password</legend>
+                <input type="password" id="password2" placeholder="confirm password" required>
+            </fieldset>
+            <br>
+            <h5 id="registrationMessage"></h5>
+            <br>
+            <button type="submit">Sign up</button>
+        </form>
+    
+        <form id="login-form">
+            <h2>Login</h2>
+            <br>
+            <fieldset>
+                <legend>Username</legend>
+                <input type="text" id="userName" placeholder="username" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Password</legend>
+                <input type="password" id="password" placeholder="password" required>
+            </fieldset>
+            <br>
+            <h5 id="loginMessage"></h5>
+            <br>
+            <button type="submit">Log in</button>
+        </form>
+    </main>
+    
+    <footer>
+        <h6>Copyright @ Tatiana Mikhailova</h6>
+    </footer>
+
     <script src="./index.js"></script>
 </body>
 </html>
